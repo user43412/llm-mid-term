@@ -20,21 +20,25 @@ pip install -r requirements.txt
 
 ## 项目结构
 
+```
 llm/
-├── train.py                 # 训练脚本
-├── requirements.txt         # 环境依赖
-├── data/                    # 数据目录
-│   ├── en-de/              # 英德翻译数据
-├── results/                # 实验结果
-│   ├── loss_curve.png       # 损失曲线图
-│   ├── accuracy_curve.png   # 准确率曲线图
-│   └── ablation_metrics.png # 消融实验图表
-├── saved_models/            # 模型保存目录
-│   └── transformer_*/     # 时间戳命名的模型文件夹
-└── src/                   # 源代码模块
-    ├── data.py           # 数据加载与预处理
-    ├── data_download.py  # 数据下载脚本
-    └── model.py          # Transformer模型
+├── train.py                    # 训练脚本
+├── requirements.txt            # 环境依赖
+├── data/                       # 数据目录
+│   └── en-de/                  # 英德翻译数据
+├── results/                    # 实验结果
+│   ├── loss_curve.png          # 损失曲线图
+│   ├── accuracy_curve.png      # 准确率曲线图
+│   └── ablation_metrics.png    # 消融实验图表
+├── scripts/                    # 脚本目录
+│   └── run.sh                 # 运行指令
+├── saved_models/               # 模型保存目录
+│   └── transformer_*/         # 时间戳命名的模型文件夹
+└── src/                        # 源代码模块
+    ├── data.py                # 数据加载与预处理
+    ├── data_download.py       # 数据下载脚本
+    └── model.py               # Transformer模型
+```
 
 ## 快速开始
 ### 1. 数据准备
